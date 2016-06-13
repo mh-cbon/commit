@@ -1,6 +1,6 @@
 # commit
 
-Commit files on the underlying VCS.
+Commit files on the underlying VCS __without failing__.
 
 # Install
 
