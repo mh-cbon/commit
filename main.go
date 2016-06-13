@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mh-cbon/gen-version-file/GenVersionFile"
+	"github.com/mh-cbon/commit/GenVersionFile"
 	"github.com/mh-cbon/go-repo-utils/repoutils"
 	"github.com/urfave/cli"
 )
