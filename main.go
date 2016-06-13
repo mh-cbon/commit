@@ -55,7 +55,6 @@ func main() {
     	err = repoutils.Add(vcs, path, string(file))
       if err!=nil {
         fmt.Printf("Failed to add %s\n", file)
-        // fmt.Println(err)
         // it does not exit on error, just print it
       }
     }
@@ -63,11 +62,9 @@ func main() {
     err = repoutils.Commit(vcs, path, message, sfile)
     if err!=nil {
       fmt.Printf("Failed to commit %s\n", err)
-      // fmt.Println(err)
       // it does not exit on error, just print it
     }
 
-    os.Exit(0)
 		return nil
 	}
 
