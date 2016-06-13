@@ -64,6 +64,7 @@ func main() {
       fmt.Println(err)
       // it does not exit on error, just print it
     }
+    fmt.Println("ok")
 		return nil
 	}
 
