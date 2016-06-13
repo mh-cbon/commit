@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mh-cbon/go-repo-utils/repoutils"
 	"github.com/mh-cbon/gen-version-file/GenVersionFile"
+	"github.com/mh-cbon/go-repo-utils/repoutils"
 	"github.com/urfave/cli"
 )
 
@@ -33,37 +33,37 @@ func main() {
 		files := c.StringSlice("file")
 		message := c.String("message")
 
-		if len(files)==0 {
+		if len(files) == 0 {
 			cli.ShowAppHelp(c)
 			return cli.NewExitError("Files are required", 1)
 		}
 
-		if len(message)==0 {
+		if len(message) == 0 {
 			cli.ShowAppHelp(c)
 			return cli.NewExitError("Message is required", 1)
 		}
 
-    path, err := os.Getwd()
-    exitWithError(err)
+		path, err := os.Getwd()
+		exitWithError(err)
 
-    vcs, err := repoutils.WhichVcs(path)
-    exitWithError(err)
+		vcs, err := repoutils.WhichVcs(path)
+		exitWithError(err)
 
-    sfile := make([]string, 0)
-    for _, file := range files {
-      sfile = append(sfile, string(file))
-    	err = repoutils.Add(vcs, path, string(file))
-      if err!=nil {
-        fmt.Printf("Failed to add %s\n", file)
-        // it does not exit on error, just print it
-      }
-    }
+		sfile := make([]string, 0)
+		for _, file := range files {
+			sfile = append(sfile, string(file))
+			err = repoutils.Add(vcs, path, string(file))
+			if err != nil {
+				fmt.Printf("Failed to add %s\n", file)
+				// it does not exit on error, just print it
+			}
+		}
 
-    err = repoutils.Commit(vcs, path, message, sfile)
-    if err!=nil {
-      fmt.Printf("Failed to commit %s\n", err)
-      // it does not exit on error, just print it
-    }
+		err = repoutils.Commit(vcs, path, message, sfile)
+		if err != nil {
+			fmt.Printf("Failed to commit %s\n", err)
+			// it does not exit on error, just print it
+		}
 
 		return nil
 	}
