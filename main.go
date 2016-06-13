@@ -65,6 +65,7 @@ func main() {
       // it does not exit on error, just print it
     }
 
+    os.Exit(0)
 		return nil
 	}
 
