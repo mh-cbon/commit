@@ -1,0 +1,4 @@
+package: github.com/mh-cbon/commit
+import:
+- package: github.com/urfave/cli
+  version: ^1.17.0

@@ -1,0 +1,10 @@
+hash: ee4cbc8c9e9d7461c89d9c836fa0a1824175352c98af864930574400ac59aa08
+updated: 2016-06-13T18:28:26.751027969+02:00
+imports:
+- name: github.com/mh-cbon/gen-version-file
+  version: a3392e85885a210cfe2d241c99ee36979904a3de
+  subpackages:
+  - GenVersionFile
+- name: github.com/urfave/cli
+  version: 01857ac33766ce0c93856370626f9799281c14f4
+devImports: []
