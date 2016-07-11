@@ -4,16 +4,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mh-cbon/commit/GenVersionFile"
 	"github.com/mh-cbon/go-repo-utils/repoutils"
 	"github.com/urfave/cli"
 )
+
+var VERSION = "0.0.0"
 
 func main() {
 
 	app := cli.NewApp()
 	app.Name = "commit"
-	app.Version = GenVersionFile.Version()
+	app.Version = VERSION
 	app.Usage = "Commit file"
 	app.UsageText = "commit -m <message> -f <file>"
 	app.Flags = []cli.Flag{
@@ -27,11 +28,16 @@ func main() {
 			Value: "",
 			Usage: "Message of the commit",
 		},
+		cli.BoolFlag{
+			Name:  "quiet, q",
+			Usage: "Silently fail",
+		},
 	}
 
 	app.Action = func(c *cli.Context) error {
 		files := c.StringSlice("file")
 		message := c.String("message")
+		quiet := c.Bool("quiet")
 
 		if len(files) == 0 {
 			cli.ShowAppHelp(c)
@@ -45,24 +51,37 @@ func main() {
 
 		path, err := os.Getwd()
 		exitWithError(err)
+		if err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
 
 		vcs, err := repoutils.WhichVcs(path)
-		exitWithError(err)
+		if err != nil {
+			return cli.NewExitError(err.Error(), 1)
+		}
 
 		sfile := make([]string, 0)
 		for _, file := range files {
 			sfile = append(sfile, string(file))
 			err = repoutils.Add(vcs, path, string(file))
 			if err != nil {
-				fmt.Printf("Failed to add %s\n", file)
-				// it does not exit on error, just print it
+				if quiet {
+					// it does not exit on error, just print it
+					fmt.Printf("Failed to add %s: %s\n", file, err.Error())
+				} else {
+					return cli.NewExitError(err.Error(), 1)
+				}
 			}
 		}
 
 		err = repoutils.Commit(vcs, path, message, sfile)
 		if err != nil {
-			fmt.Printf("Failed to commit %s\n", err)
-			// it does not exit on error, just print it
+			if quiet {
+				// it does not exit on error, just print it
+				fmt.Printf("Failed to commit %s\n", err.Error())
+			} else {
+				return cli.NewExitError(err.Error(), 1)
+			}
 		}
 
 		return nil
