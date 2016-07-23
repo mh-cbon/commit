@@ -1,5 +1,18 @@
 # Changelog - commit
 
+### 0.0.4-beta4
+
+__Changes__
+
+- appveyor: fix checkout command which can t use env variable
+
+__Contributors__
+
+- mh-cbon
+
+Released by mh-cbon, Sat 23 Jul 2016
+______________
+
 ### 0.0.4-beta3
 
 __Changes__
