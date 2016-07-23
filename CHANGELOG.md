@@ -1,5 +1,18 @@
 # Changelog - commit
 
+### 0.0.4-beta5
+
+__Changes__
+
+- appveyor: update go-msi version
+
+__Contributors__
+
+- mh-cbon
+
+Released by mh-cbon, Sat 23 Jul 2016
+______________
+
 ### 0.0.4-beta4
 
 __Changes__
