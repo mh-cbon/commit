@@ -1,4 +1,14 @@
 
+0.0.4-beta5
+
+  * appveyor: update go-msi version
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Sat, 23 Jul 2016 15:38:46 +0200
+
+
+
 0.0.4-beta4
 
   * appveyor: fix checkout command which can t use env variable
