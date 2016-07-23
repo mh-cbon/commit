@@ -1,4 +1,14 @@
 
+0.0.5
+
+  * packaging: Add packages for rpm/deb/msi
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Sat, 23 Jul 2016 15:44:05 +0200
+
+
+
 0.0.4-beta6
 
   * appveyor: update go-msi version
