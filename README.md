@@ -31,7 +31,7 @@ go install
 # Usage
 
 ```sh
-AME:
+NAME:
    commit - Commit file
 
 USAGE:
