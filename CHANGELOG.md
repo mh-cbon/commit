@@ -1,5 +1,18 @@
 # Changelog - commit
 
+### 0.0.5
+
+__Changes__
+
+- packaging: Add packages for rpm/deb/msi
+
+__Contributors__
+
+- mh-cbon
+
+Released by mh-cbon, Sat 23 Jul 2016
+______________
+
 ### 0.0.4-beta6
 
 __Changes__
