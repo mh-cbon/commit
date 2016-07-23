@@ -1,4 +1,14 @@
 
+0.0.4-beta2
+
+  * empty: trigger build on appveyor ci
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Sat, 23 Jul 2016 12:14:40 +0200
+
+
+
 0.0.4-beta1
 
   * release: fix wrong repo name in release script
