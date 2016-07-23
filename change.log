@@ -1,5 +1,5 @@
 
-UNRELEASED
+0.0.4-beta
 
   * glide: fix dependency
 
@@ -38,3 +38,5 @@ UNRELEASED
   - mh-cbon <mh-cbon@users.noreply.github.com>
 
 -- mh-cbon <mh-cbon@users.noreply.github.com>; Mon, 13 Jun 2016 21:25:59 +0200
+
+
