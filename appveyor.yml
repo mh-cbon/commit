@@ -1,6 +1,6 @@
 version: "{build}"
 os: Windows Server 2012 R2
-clone_folder: c:\gopath\src\github.com\mh-cbon\%APPVEYOR_PROJECT_NAME%
+clone_folder: c:\gopath\src\github.com\mh-cbon\commit
 skip_non_tags: true
 
 environment:
