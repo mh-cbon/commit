@@ -1,4 +1,14 @@
 
+0.0.4-beta3
+
+  * appveyor: fix yml indentation
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Sat, 23 Jul 2016 15:09:41 +0200
+
+
+
 0.0.4-beta2
 
   * empty: trigger build on appveyor ci
