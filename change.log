@@ -1,0 +1,40 @@
+
+UNRELEASED
+
+  * glide: fix dependency
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Sat, 23 Jul 2016 11:58:47 +0200
+
+
+
+0.0.3
+
+  * add -q option to ensure the commit does not fail
+  * update release flow
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Mon, 11 Jul 2016 15:22:23 +0200
+
+
+
+0.0.2
+
+  * fix imports
+  * update release script
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Mon, 13 Jun 2016 22:02:49 +0200
+
+
+
+0.0.1
+
+  * Initial release
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Mon, 13 Jun 2016 21:25:59 +0200
