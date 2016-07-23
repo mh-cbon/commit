@@ -1,0 +1,26 @@
+{
+  "product": "commit",
+  "company": "mh-cbon",
+  "license": "LICENSE",
+  "upgrade-code": "95F47EA7-F501-44B7-8F67-7C245450BF8F",
+  "files": {
+    "guid": "FC5F45DF-045D-4924-9F0F-0E98A3C7754E",
+    "items": [
+      "commit.exe"
+    ]
+  },
+  "env": {
+    "guid": "C6AC458D-8D7E-41E4-9CBE-0FA9E9592AC5",
+    "vars": [
+      {
+        "name": "PATH",
+        "value": "[INSTALLDIR]",
+        "permanent": "no",
+        "system": "no",
+        "action": "set",
+        "part": "last"
+      }
+    ]
+  },
+  "shortcuts": {}
+}
