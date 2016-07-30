@@ -1,0 +1,36 @@
+Package: commit
+Priority: extra
+Section: unknown
+Installed-Size: 3.4 kB
+Maintainer: mh-cbon <mh-cbon@users.noreply.github.com>
+Architecture: i386
+Source: commit
+Version: 0.0.6
+Filename: pool/contrib/c/commit/commit-0.0.6_386.deb
+Size: 918186
+MD5sum: 04b4ded6e3c202f3ab91ab088d2c41c0
+SHA1: 2bacca8c4130b095c79fd9ab816be1605abd597b
+SHA256: b1234d323f86f24b8c66d22294a0562b476c724f8b154a2d5ff4affc4ef07e31
+SHA512: 5e2dfb4e3e8e958c293dbeddc5e2307e15f0423fee553820bcf90dabf6f91564befcdc29aca86d89ff95bcaf38ad5705b9d4635d8cdd9cc841672f00615e7412
+Description: Commit files on the underlying VCS
+Package-Type: deb
+Homepage: http://github.com/mh-cbon/commit
+
+Package: commit
+Priority: extra
+Section: unknown
+Installed-Size: 3.4 kB
+Maintainer: mh-cbon <mh-cbon@users.noreply.github.com>
+Architecture: i386
+Source: commit
+Version: 0.0.5
+Filename: pool/contrib/c/commit/commit-0.0.5_386.deb
+Size: 917572
+MD5sum: 26b27d1901a657ab2bbc278bb7366e84
+SHA1: 0416b4f2e91f090fe518b94498e16ea8dda2eb06
+SHA256: 12b77a81541476e23851283ab06dd6087e6f989f68254b0404d0b5222ac93894
+SHA512: dd040684e23556cef3c049171ef37ffc7a39920c84ca2490a41b8f4f74211742baacdb231660fc74e0decbc5c07b5c5e9c329cc5f0861573636f1ee0eb856e67
+Description: Commit files on the underlying VCS
+Package-Type: deb
+Homepage: http://github.com/mh-cbon/commit
+
