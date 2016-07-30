@@ -1,4 +1,16 @@
 
+UNRELEASED
+
+  * packaging: add choco package, add deb/rpm repositories
+  * README: fix typo in usage section
+  * README: update install section
+
+  - mh-cbon <mh-cbon@users.noreply.github.com>
+
+-- mh-cbon <mh-cbon@users.noreply.github.com>; Sat, 30 Jul 2016 03:22:32 +0200
+
+
+
 0.0.5
 
   * packaging: Add packages for rpm/deb/msi
@@ -108,5 +120,3 @@
   - mh-cbon <mh-cbon@users.noreply.github.com>
 
 -- mh-cbon <mh-cbon@users.noreply.github.com>; Mon, 13 Jun 2016 21:25:59 +0200
-
-
