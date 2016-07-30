@@ -1,5 +1,5 @@
 
-UNRELEASED
+0.0.6
 
   * packaging: add choco package, add deb/rpm repositories
   * README: fix typo in usage section
@@ -120,3 +120,5 @@ UNRELEASED
   - mh-cbon <mh-cbon@users.noreply.github.com>
 
 -- mh-cbon <mh-cbon@users.noreply.github.com>; Mon, 13 Jun 2016 21:25:59 +0200
+
+
