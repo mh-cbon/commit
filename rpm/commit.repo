@@ -1,0 +1,6 @@
+[commit]
+name=Commit files on the underlying VCS
+baseurl=https://mh-cbon.github.io/commit/rpm/$basearch/
+enabled=1
+skip_if_unavailable=1
+gpgcheck=0
